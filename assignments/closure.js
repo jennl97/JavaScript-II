@@ -1,6 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function home(){
+  const mom = "Mom";
+  console.log(`${mom} says it's time to clean the house!`);
 
+  function kitchen(){
+    const dad = "Dad";
+    console.log(`${dad} is doing the dishes while ${mom} cleans the living room.`);
+
+    function bedroom(){
+      const kids = "Tayah, Rhiannon and Chloe";
+      console.log(`${mom} keeps asking ${dad} to make sure that ${kids} are cleaning their bedrooms.`);
+    };
+    bedroom();
+  };
+  kitchen();
+};
+home();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
